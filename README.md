@@ -13,13 +13,14 @@ pip install iglabel
 
 
 ```python
-import iglabel
+from iglabel import *
 
 label_dict, position_dict = IMGT(["CASSLGTGELFF"], ["CDR3"])
 ```
 **INPUTS**
 - sequences: A list of sequences for which you want to obtain the IMGT labels.
 - regions: A list of regions in the same order as the sequences to receive the right labelling. Possible regions are: FR1, CDR1, FR2, CDR2, FR3, CDR3, FR4.
+- save: If True, a txt document will be saved in the current directory. If False, no document will be saved.
 
 **RETURN**
 
@@ -35,7 +36,7 @@ label_dict, position_dict = IMGT(["CASSLGTGELFF"], ["CDR3"])
 You can parse multiple sequences at once if you want:
 
 ```python
-label_dict, position_dict = IMGT(["CASSLGTG", "CASSLGTGELFF"], ["CDR2", "CDR3"])
+label_dict, position_dict = IMGT(["CASSLGTG", "CASSLGTGELFF"], ["CDR2", "CDR3"], save = False)
 ``` 
 
 
