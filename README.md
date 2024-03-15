@@ -28,7 +28,7 @@ label_dict, position_dict = IMGT(["CASSLGTGELFF"], ["CDR3"])
 
 - position_dict: Contains the IMGT labels as keys and the positions from n-lengthsequence as values.
 
-- A txt document which visualizes the sequence with the corresponding IMGT label.
+- A [txt document](output.txt) which visualizes the sequence with the corresponding IMGT label.
 
 #### *Example: Multiple Sequences*
 
