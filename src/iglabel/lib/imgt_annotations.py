@@ -47,7 +47,7 @@ class IMGTAnnotation:
     
     @staticmethod
     def cdr2(length):
-        return [str(i) for i in list(range(55, 55 + length))]
+        return [str(i) for i in list(range(56, 56 + length))]
     
     @staticmethod
     def fr3(length):
